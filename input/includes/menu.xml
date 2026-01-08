@@ -1,0 +1,62 @@
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+	<li>
+		<a href="index.html">IG Home</a>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Conformance<b class="caret"> </b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="kr_cdi.html">KR CDI</a>
+			</li>
+			<li>
+				<a href="general_requirements.html">General Requirements</a>
+			</li>
+			<li>
+				<a href="element_support_and_responsibilities.html">Element Support and Responsibilities</a>
+			</li>
+		</ul>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance<b class="caret"> </b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="key_terms.html">Key Terms</a>
+			</li>
+			<li>
+				<a href="general_guidance.html">General Guidance</a>
+			</li>
+		</ul>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR Artifacts<b class="caret"> </b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="profiles_and_extensions.html">Profiles and Extensions</a>
+			</li>
+			<li>
+				<a href="search_parameters.html">Search Parameters</a>
+			</li>
+			<li>
+				<a href="terminology.html">Terminology</a>
+			</li>
+			<li>
+				<a href="actor_definitions.html">Actor Definitions</a>
+			</li>
+			<li>
+				<a href="capability_statements.html">Capability Statements</a>
+			</li>
+		</ul>
+	</li>
+	<li>
+		<a href="examples.html">Examples</a>
+	</li>
+	<li>
+		<a href="downloads.html">Downloads</a>
+	</li>
+	<li>
+		<a href="change_log.html">Change Log</a>
+	</li>
+</ul>

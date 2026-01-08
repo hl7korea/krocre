@@ -1,0 +1,25 @@
+############################
+# OS / Editor
+############################
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.log
+
+############################
+# Java / IG Publisher
+############################
+*.class
+*.jar
+*.war
+*.ear
+
+############################
+# Node / tooling (if used)
+############################
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

@@ -1,0 +1,246 @@
+== Suppressed Messages ==
+
+# The following fragments are not used in KR Core IG
+The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+
+
+# Derivation relationship is not valid - Derivation relationship was intentionally ignored to clarify or broaden the scope of the search
+The expression 'AllergyIntolerance.onset.ofType(dateTime) | AllergyIntolerance.reaction.onset' is not compatible with the expression 'AllergyIntolerance.reaction.onset' in the derivedFrom SearchParameter http://hl7.org/fhir/SearchParameter/AllergyIntolerance-onset, and this likely indicates that the derivation relationship is not valid
+The expression 'Condition.onset.ofType(dateTime) | Condition.onset.ofType(Period)' is not compatible with the expression 'Condition.onset.as(dateTime) | Condition.onset.as(Period)' in the derivedFrom SearchParameter http://hl7.org/fhir/SearchParameter/Condition-onset-date, and this likely indicates that the derivation relationship is not valid
+The expression 'Organization.address | Organization.address.text | Organization.address.extension('http://www.hl7korea.or.kr/fhir/krcore/StructureDefinition/krcore-roadNameAddress').extension.value' is not compatible with the expression 'Organization.address' in the derivedFrom SearchParameter http://hl7.org/fhir/SearchParameter/Organization-address, and this likely indicates that the derivation relationship is not valid
+The expression 'Patient.address | Patient.address.text | Patient.address.extension('http://www.hl7korea.or.kr/fhir/krcore/StructureDefinition/krcore-roadNameAddress').extension.value' is not compatible with the expression 'Patient.address | Person.address | Practitioner.address | RelatedPerson.address' in the derivedFrom SearchParameter http://hl7.org/fhir/SearchParameter/individual-address, and this likely indicates that the derivation relationship is not valid
+The expression 'Patient.id' is not compatible with the expression 'Resource.id' in the derivedFrom SearchParameter http://hl7.org/fhir/SearchParameter/Resource-id, and this likely indicates that the derivation relationship is not valid
+The expression 'Practitioner.id' is not compatible with the expression 'Resource.id' in the derivedFrom SearchParameter http://hl7.org/fhir/SearchParameter/Resource-id, and this likely indicates that the derivation relationship is not valid
+The expression 'Practitioner.identifier | Practitioner.qualification.identifier' is not compatible with the expression 'Practitioner.identifier' in the derivedFrom SearchParameter http://hl7.org/fhir/SearchParameter/Practitioner-identifier, and this likely indicates that the derivation relationship is not valid
+The expression 'MedicationRequest.medication.ofType(Reference)' is not compatible with the expression '(MedicationAdministration.medication as Reference) | (MedicationDispense.medication as Reference) | (MedicationRequest.medication as Reference) | (MedicationStatement.medication as Reference)' in the derivedFrom SearchParameter http://hl7.org/fhir/SearchParameter/medications-medication, and this likely indicates that the derivation relationship is not valid
+The expression 'Observation.component.value.ofType(CodeableConcept)' is not compatible with the expression '(Observation.component.value as CodeableConcept)' in the derivedFrom SearchParameter http://hl7.org/fhir/SearchParameter/Observation-component-value-concept, and this likely indicates that the derivation relationship is not valid
+The expression 'Observation.component.value.ofType(Quantity) | Observation.component.value.ofType(SampledData)' is not compatible with the expression '(Observation.component.value as Quantity) | (Observation.component.value as SampledData)' in the derivedFrom SearchParameter http://hl7.org/fhir/SearchParameter/Observation-component-value-quantity, and this likely indicates that the derivation relationship is not valid
+The expression 'Observation.value.ofType(dateTime) | Observation.value.ofType(Period)' is not compatible with the expression '(Observation.value as dateTime) | (Observation.value as Period)' in the derivedFrom SearchParameter http://hl7.org/fhir/SearchParameter/Observation-value-date, and this likely indicates that the derivation relationship is not valid
+The expression 'Observation.value.ofType(Quantity) | Observation.value.ofType(SampledData)' is not compatible with the expression '(Observation.value as Quantity) | (Observation.value as SampledData)' in the derivedFrom SearchParameter http://hl7.org/fhir/SearchParameter/Observation-value-quantity, and this likely indicates that the derivation relationship is not valid
+The expression 'Observation.value.ofType(string) | Observation.value.ofType(CodeableConcept).text' is not compatible with the expression '(Observation.value as string) | (Observation.value as CodeableConcept).text' in the derivedFrom SearchParameter http://hl7.org/fhir/SearchParameter/Observation-value-string, and this likely indicates that the derivation relationship is not valid
+The expression 'Observation.value.ofType(CodeableConcept)' is not compatible with the expression '(Observation.value as CodeableConcept)' in the derivedFrom SearchParameter http://hl7.org/fhir/SearchParameter/Observation-value-concept, and this likely indicates that the derivation relationship is not valid
+The expression 'Medication.ingredient.item.ofType(CodeableConcept)' is not compatible with the expression '(Medication.ingredient.item as CodeableConcept)' in the derivedFrom SearchParameter http://hl7.org/fhir/SearchParameter/Medication-ingredient-code, and this likely indicates that the derivation relationship is not valid
+
+
+# Ignore information and warnings related to missing CodeSystems.
+A definition for CodeSystem 'http://www.hl7korea.or.kr/CodeSystem/kostat-kcd-8' could not be found, so the code cannot be validated
+Unable to check whether the code is in the value set 'http://www.hl7korea.or.kr/fhir/krcore/ValueSet/krcore-kcd8-codes|1.0.2' because the code system http://www.hl7korea.or.kr/CodeSystem/kostat-kcd-8 was not found
+A definition for CodeSystem 'http://www.hl7korea.or.kr/CodeSystem/kostat-kcd-8' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'http://www.hl7korea.or.kr/fhir/krcore/ValueSet/krcore-kcd8-codes|1.0.2' because the code system http://www.hl7korea.or.kr/CodeSystem/kostat-kcd-8 was not found
+Unable to check whether the code is in the value set 'http://www.hl7korea.or.kr/fhir/krcore/ValueSet/krcore-kcd8-codes|1.0.2' because the code system http://www.hl7korea.or.kr/CodeSystem/kostat-kcd-8, http://snomed.info/sct was not found
+A definition for CodeSystem 'http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure' could not be found, so the code cannot be validated
+There are no valid display names found for the code http://loinc.org#24601-7 for language(s) 'ko-KR'. The display is 'US Breast' the default language display
+Unable to check whether the code is in the value set 'http://www.hl7korea.or.kr/fhir/krcore/ValueSet/krcore-diagnostic-imaging-codes|2.0.0' because the code system http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure was not found
+A definition for CodeSystem 'http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'http://www.hl7korea.or.kr/fhir/krcore/ValueSet/krcore-diagnostic-imaging-codes|2.0.0' because the code system http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure was not found
+Unable to check whether the code is in the value set 'http://www.hl7korea.or.kr/fhir/krcore/ValueSet/krcore-edi-procedure-codes|1.0.2' because the code system http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure was not found
+A definition for CodeSystem 'http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'http://www.hl7korea.or.kr/fhir/krcore/ValueSet/krcore-edi-procedure-codes|1.0.2' because the code system http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure was not found
+A definition for CodeSystem 'http://www.hl7korea.or.kr/CodeSystem/kpis-kdcode' could not be found, so the code cannot be validated
+Resolved system http://www.hl7korea.or.kr/CodeSystem/kpis-kdcode (v1.0.2), but the definition doesn't include any codes, so the code has not been validated
+A definition for CodeSystem 'http://www.hl7korea.or.kr/CodeSystem/hira-edi-medication' could not be found, so the code cannot be validated
+Unable to check whether the code is in the value set 'http://www.hl7korea.or.kr/fhir/krcore/ValueSet/krcore-edi-medication-codes|1.0.2' because the code system http://www.hl7korea.or.kr/CodeSystem/hira-edi-medication was not found
+A definition for CodeSystem 'http://www.hl7korea.or.kr/CodeSystem/hira-edi-medication' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'http://www.hl7korea.or.kr/fhir/krcore/ValueSet/krcore-edi-medication-codes|1.0.2' because the code system http://www.hl7korea.or.kr/CodeSystem/hira-edi-medication was not found
+Unable to check whether the code is in the value set 'http://www.hl7korea.or.kr/fhir/krcore/ValueSet/krcore-laboratory-codes|2.0.0' because the code system http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure was not found
+A definition for CodeSystem 'http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'http://www.hl7korea.or.kr/fhir/krcore/ValueSet/krcore-laboratory-codes|2.0.0' because the code system http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure was not found
+Unable to check whether the code is in the value set 'http://www.hl7korea.or.kr/fhir/krcore/ValueSet/krcore-procedure-codes|2.0.0' because the code system http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure was not found
+A definition for CodeSystem 'http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'http://www.hl7korea.or.kr/fhir/krcore/ValueSet/krcore-procedure-codes|2.0.0' because the code system http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure was not found
+Unable to expand included value set 'http://www.hl7korea.or.kr/fhir/krcore/ValueSet/krcore-edi-procedure-codes': Unable to expand imported value set: Error from https://tx.fhir.org/r4: Unable to provide support for code system http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure (and Error from https://tx.fhir.org/r4: Unable to provide support for code system http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure)
+Error from https://tx.fhir.org/r4: Unable to provide support for code system http://www.hl7korea.or.kr/CodeSystem/hira-edi-material
+Error from https://tx.fhir.org/r4: Unable to provide support for code system http://www.hl7korea.or.kr/CodeSystem/hira-edi-medication
+Error from https://tx.fhir.org/r4: Unable to provide support for code system http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure
+Error from https://tx.fhir.org/r4: Unable to provide support for code system http://www.hl7korea.or.kr/CodeSystem/kostat-kcd-8 
+Error from https://tx.fhir.org/r4: Unable to provide support for code system http://www.hl7korea.or.kr/CodeSystem/kpis-kdcode
+
+
+# These CodeSystems are too large, so concept definitions have been omitted.
+The value set references CodeSystem 'http://www.hl7korea.or.kr/CodeSystem/kostat-kcd-8' which has status 'not-present'
+The value set references CodeSystem 'http://www.hl7korea.or.kr/CodeSystem/kpis-kdcode' which has status 'not-present'
+The value set references CodeSystem 'http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure' which has status 'not-present'
+The value set references CodeSystem 'http://www.hl7korea.or.kr/CodeSystem/hira-edi-medication' which has status 'not-present'
+The value set references CodeSystem 'http://www.hl7korea.or.kr/CodeSystem/hira-edi-material' which has status 'not-present'
+
+
+
+# Ignore information and warnings related to displays.
+'Beta-lactam' is the default display; the code system http://snomed.info/sct has no Display Names for the language ko-KR
+'Anaphylactic urticaria (disorder)' is the default display; the code system http://snomed.info/sct has no Display Names for the language ko-KR
+'Itchy' is the default display; the code system http://snomed.info/sct has no Display Names for the language ko-KR
+'Allergy to peanut (finding)' is the default display; the code system http://snomed.info/sct has no Display Names for the language ko-KR 
+'Eruption of skin' is the default display; the code system http://snomed.info/sct has no Display Names for the language ko-KR
+'Difficulty breathing (finding)' is the default display; the code system http://snomed.info/sct has no Display Names for the language ko-KR
+'Lower abdominal pain' is the default display; the code system http://snomed.info/sct has no Display Names for the language ko-KR
+'Severe' is the default display; the code system http://snomed.info/sct has no Display Names for the language ko-KR
+'Acute diarrhea (disorder)' is the default display; the code system http://snomed.info/sct has no Display Names for the language ko-KR
+'Inflammation of intestine caused by bacteria (disorder)' is the default display; the code system http://snomed.info/sct has no Display Names for the language ko-KR
+'Inflammation of intestine caused by bacteria (disorder)' is the default display; the code system http://snomed.info/sct has no Display Names for the language ko-KR; A definition for CodeSystem 'http://www.hl7korea.or.kr/CodeSystem/kostat-kcd-8' could not be found, so the code cannot be validated; The provided code 'http://snomed.info/sct#75375008 ('Inflammation of intestine caused by bacteria (disorder)')' was not found in the value set 'http://www.hl7korea.or.kr/fhir/krcore/ValueSet/krcore-kcd8-codes|1.0.2'; Unable to check whether the code is in the value set 'http://www.hl7korea.or.kr/fhir/krcore/ValueSet/krcore-kcd8-codes|1.0.2' because the code system http://www.hl7korea.or.kr/CodeSystem/kostat-kcd-8, http://snomed.info/sct was not found
+There are no valid display names found for the code http://loinc.org#74446-6 for language(s) 'ko-KR'. The display is 'Stone analysis panel' the default language display
+There are no valid display names found for the code http://loinc.org#15061-5 for language(s) 'ko-KR'. The display is 'Erythropoietin (EPO) [Units/volume] in Serum or Plasma' the default language display
+'Within reference range (qualifier value)' is the default display; the code system http://snomed.info/sct has no Display Names for the language ko-KR
+'Surgical pathology consultation and report on referred slides prepared elsewhere (procedure)' is the default display; the code system http://snomed.info/sct has no Display Names for the language ko-KR
+'Hormone receptor positive malignant neoplasm of breast (disorder)' is the default display; the code system http://snomed.info/sct has no Display Names for the language ko-KR
+'Inpatient stay 8 days (finding)' is the default display; the code system http://snomed.info/sct has no Display Names for the language ko-KR
+'primary performer' is the default display; the code system http://terminology.hl7.org/CodeSystem/v3-ParticipationType has no Display Names for the language ko-KR
+'Participation' is the default display; the code system http://terminology.hl7.org/CodeSystem/v3-ParticipationType has no Display Names for the language ko-KR
+'Upper limb structure (body structure)' is the default display; the code system http://snomed.info/sct has no Display Names for the language ko-KR
+'Left upper arm structure (body structure)' is the default display; the code system http://snomed.info/sct has no Display Names for the language ko-KR
+'Intramuscular route (qualifier value)' is the default display; the code system http://snomed.info/sct has no Display Names for the language ko-KR
+'Tablet (basic dose form)' is the default display; the code system http://snomed.info/sct has no Display Names for the language ko-KR
+'Amlodipine besilate (substance)' is the default display; the code system http://snomed.info/sct has no Display Names for the language ko-KR
+'Rosuvastatin calcium (substance)' is the default display; the code system http://snomed.info/sct has no Display Names for the language ko-KR
+There are no valid display names found for the code http://loinc.org#8302-2 for language(s) 'ko-KR'. The display is 'Body height' the default language display
+There are no valid display names found for the code http://loinc.org#789-8 for language(s) 'ko-KR'. The display is 'Erythrocytes [#/volume] in Blood by Automated count' the default language display
+There are no valid display names found for the code http://loinc.org#6690-2 for language(s) 'ko-KR'. The display is 'Leukocytes [#/volume] in Blood by Automated count' the default language display
+There are no valid display names found for the code http://loinc.org#718-7 for language(s) 'ko-KR'. The display is 'Hemoglobin [Mass/volume] in Blood' the default language display
+There are no valid display names found for the code http://loinc.org#4544-3 for language(s) 'ko-KR'. The display is 'Hematocrit [Volume Fraction] of Blood by Automated count' the default language display
+There are no valid display names found for the code http://loinc.org#777-3 for language(s) 'ko-KR'. The display is 'Platelets [#/volume] in Blood by Automated count' the default language display
+There are no valid display names found for the code http://loinc.org#85354-9 for language(s) 'ko-KR'. The display is 'Blood pressure panel with all children optional' the default language display
+There are no valid display names found for the code http://loinc.org#8480-6 for language(s) 'ko-KR'. The display is 'Systolic blood pressure' the default language display
+There are no valid display names found for the code http://loinc.org#8462-4 for language(s) 'ko-KR'. The display is 'Diastolic blood pressure' the default language display
+There are no valid display names found for the code http://loinc.org#9843-4 for language(s) 'ko-KR'. The display is 'Head Occipital-frontal circumference' the default language display
+'Head structure (body structure)' is the default display; the code system http://snomed.info/sct has no Display Names for the language ko-KR
+There are no valid display names found for the code http://loinc.org#2708-6 for language(s) 'ko-KR'. The display is 'Oxygen saturation in Arterial blood' the default language display
+There are no valid display names found for the code http://loinc.org#9279-1 for language(s) 'ko-KR'. The display is 'Respiratory rate' the default language display
+'Paramedic (occupation)' is the default display; the code system http://snomed.info/sct has no Display Names for the language ko-KR
+'Procedure (procedure)' is the default display; the code system http://snomed.info/sct has no Display Names for the language ko-KR
+'Surgical procedure' is the default display; the code system http://snomed.info/sct has no Display Names for the language ko-KR
+'Anesthesia and/or sedation procedure' is the default display; the code system http://snomed.info/sct has no Display Names for the language ko-KR
+'Epidural anesthesia (procedure)' is the default display; the code system http://snomed.info/sct has no Display Names for the language ko-KR
+There are no valid display names found for the code http://loinc.org#8310-5 for language(s) 'ko-KR'. The display is 'Body temperature' the default language display
+There are no valid display names found for the code http://loinc.org#29463-7 for language(s) 'ko-KR'. The display is 'Body weight' the default language display
+There are no valid display names found for the code http://loinc.org#8867-4 for language(s) 'ko-KR'. The display is 'Heart rate' the default language display
+There are no valid display names found for the code http://loinc.org#8478-0 for language(s) 'ko-KR'. The display is 'Mean blood pressure' the default language display
+'Capillary blood specimen (specimen)' is the default display; the code system http://snomed.info/sct has no Display Names for the language ko-KR
+'Serum specimen (specimen)' is the default display; the code system http://snomed.info/sct has no Display Names for the language ko-KR
+'Structure of median cubital vein (body structure)' is the default display; the code system http://snomed.info/sct has no Display Names for the language ko-KR
+'Evacuated blood collection tube, gel separator (physical object)' is the default display; the code system http://snomed.info/sct has no Display Names for the language ko-KR
+
+
+# These draft CodeSystems were used by mutual agreement.
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/medicationrequest-category|1.0.0
+
+
+# These ValueSets are not supported by tx server
+ValueSet 'http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1' not found
+
+
+# Ignore information and warnings related to property codes (used for providing supplementary information).
+The type of property 'code' is 'code', but no ValueSet information was found, so the codes will be validated as internal codes
+This property has only a code ('class') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
+
+
+# These slicings were intentionally added to demonstrate usage.
+This element does not match any known slice defined in the profile http://www.hl7korea.or.kr/fhir/krcore/StructureDefinition/krcore-diagnosticreport-diagnostic-imaging|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+This element does not match any known slice defined in the profile http://www.hl7korea.or.kr/fhir/krcore/StructureDefinition/krcore-diagnosticreport-laboratory-results|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+This element does not match any known slice defined in the profile http://www.hl7korea.or.kr/fhir/krcore/StructureDefinition/krcore-bloodpressure|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bp|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+
+
+# These OIDs and URIs were intentionally used for demonstration purposes.
+No definition could be found for URL value 'urn:oid:1.2.3.4.5.6'
+No definition could be found for URL value 'http://www.example.co.kr/119'
+No definition could be found for URL value 'http://www.hangukhospital.co.kr/medicaldept-example'
+No definition could be found for URL value 'http://www.hangukhospital.co.kr/pid-example'
+No definition could be found for URL value 'http://www.hangukhospital.co.kr/doctorid-example'
+No definition could be found for URL value 'https://www.examplehospital.com/Identifier/practitioner-id'
+No definition could be found for URL value 'https://www.example119.com/Identifier/paramedic-id'
+No definition could be found for URL value 'http://www.hangukhospital.co.kr/doctorroleid-example'
+No definition could be found for URL value 'http://www.example.co.kr/paramedic-id'
+No definition could be found for URL value 'https://www.examplehospital.com/Identifier/specimen-id'
+
+
+# The following items are used in the FHIR R4 ImagingStudy base specification.
+A definition could not be found for Canonical URL 'http://www.rsna.org/RadLex_Playbook.aspx'
+A definition could not be found for Canonical URL 'http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1'
+The definition for the element 'ImagingStudy.series.performer.function' binds to the value set 'http://hl7.org/fhir/ValueSet/series-performer-function' which is experimental, but this structure is not labeled as experimental
+
+
+# The performer has been omitted for simplicity in some examples.
+Best Practice Recommendation: In general, all observations should have a performer
+
+
+# Ignore information and warnings related to ActorDefinition. 
+Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
+No definition could be found for URL value 'http://www.hl7korea.or.kr/fhir/krcore'
+Hyperlink 'http://www.hl7korea.or.kr/fhir/krcore' at 'div/table/tr/td/a' for 'http://www.hl7korea.or.kr/fhir/krcore' is a canonical reference, and is unsafe because of version handling (points to the current version, not this version)
+
+
+# Ignore broken links
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU2/index.html' for "http://www.hl7korea.or.kr/fhir/krcore/STU2" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1/StructureDefinition-krcore-condition-encounter-diagnosis.html#kr-core-search-parameters-defined' for "KR Core Search Parameters (defined)" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1/StructureDefinition-krcore-condition-chief-complaint.html#kr-core-search-parameters-defined' for "KR Core Search Parameters (defined)" cannot be resolved
+The link './ValueSet-krcore-specimen-type-codes.html' for "KR Core Specimen Type Codes" cannot be resolved
+The link 'StructureDefinition-krcore-pulseoximeter.html' for "KR Core Observation Profile for Vital Signs: Pulse Oximetry" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore' for "http://www.hl7korea.or.kr/fhir/krcore" is a canonical link and is therefore unsafe with regard to versions
+The link 'http://www.hl7korea.or.kr/fhir/krcore/2023June/index.html' for "http://www.hl7korea.or.kr/fhir/krcore/2023June" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/2025July/index.html' for "http://www.hl7korea.or.kr/fhir/krcore/2025July" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/2025July2nd/index.html' for "http://www.hl7korea.or.kr/fhir/krcore/2025July2nd" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/2025JulyFinal/index.html' for "http://www.hl7korea.or.kr/fhir/krcore/2025JulyFinal" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/CodeSystem/krcore-vcnt-types' for "http://www.hl7korea.or.kr/fhir/krcore/CodeSystem/krcore-vcnt-types" is a canonical link and is therefore unsafe with regard to versions
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1.0.1/CodeSystem-hira-edi-material.html' for "HIRA EDI Material" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1.0.1/CodeSystem-hira-edi-medication.html' for "HIRA EDI Medication" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1.0.1/CodeSystem-hira-edi-procedure.html' for "HIRA EDI Procedure" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1.0.1/CodeSystem-kostat-kcd-8.html' for "KOSTAT KCD-8" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1.0.1/CodeSystem-kpis-kdcode.html' for "KPIS Korea Drug Code" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1.0.1/index.html' for "http://www.hl7korea.or.kr/fhir/krcore/STU1.0.1" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1.0.2/CodeSystem-hira-edi-material.html' for "http://www.hl7korea.or.kr/CodeSystem/hira-edi-material" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1.0.2/CodeSystem-hira-edi-medication.html' for "http://www.hl7korea.or.kr/CodeSystem/hira-edi-medication" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1.0.2/CodeSystem-hira-edi-procedure.html' for "http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1.0.2/CodeSystem-kostat-kcd-8.html' for "http://www.hl7korea.or.kr/CodeSystem/kostat-kcd-8" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1.0.2/CodeSystem-kpis-kdcode.html' for "http://www.hl7korea.or.kr/CodeSystem/kpis-kdcode" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1.0.2/index.html' for "http://www.hl7korea.or.kr/fhir/krcore/STU1.0.2" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1/CapabilityStatement-krcore-capabilitystatement-client.html' for "KR Core Client CapabilityStatement" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1/CapabilityStatement-krcore-capabilitystatement-server.html' for "KR Core Server CapabilityStatement" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1/CodeSystem-mohw-practitioner-qualification-types.html' for "CodeSystem: MOHW Practitioner Qualification Types" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1/Patient-krcore-patient-example-02.html' for "krcore-patient-example-02" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1/SearchParameter-krcore-sp-condition-diagnosis-date.html' for "diagnosis-date" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1/SearchParameter-krcore-sp-condition-diagnosis-date.html' for "krcore-sp-condition-diagnosis-date" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1/StructureDefinition-krcore-allergyintolerance.html' for "KR Core AllergyIntolerance Profile" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1/StructureDefinition-krcore-condition-chief-complaint.html' for "KR Core Condition Profile for Chief Complaint" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1/StructureDefinition-krcore-condition-encounter-diagnosis.html' for "KR Core Condition Profile for Encounter Diagnosis" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1/StructureDefinition-krcore-diagnosisDateTime.html' for "krcore-diagnosisDateTime" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1/StructureDefinition-krcore-diagnosticreport-diagnostic-imaging.html' for "KR Core DiagnosticReport Profile for Diagnostic Imaging" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1/StructureDefinition-krcore-diagnosticreport-function-tests.html' for "KR Core DiagnosticReport Profile for Functional Tests" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1/StructureDefinition-krcore-diagnosticreport-laboratory-results.html' for "KR Core DiagnosticReport Profile for Laboratory Results" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1/StructureDefinition-krcore-diagnosticreport-pathology-results.html' for "KR Core DiagnosticReport Profile for Pathology Results" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1/StructureDefinition-krcore-immunization.html' for "KR Core Immunization Profile" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1/StructureDefinition-krcore-medical-doctor.html' for "KR Core Practitioner Profile for Medical Doctor" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1/StructureDefinition-krcore-medication.html' for "KR Core Medication Profile" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1/StructureDefinition-krcore-observation-function-test.html' for "KR Core Observation Profile for Functional Test" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1/StructureDefinition-krcore-observation-laboratory-result.html' for "KR Core Observation Profile for Laboratory Result" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1/StructureDefinition-krcore-patient.html' for "KR Core Patient Profile" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1/StructureDefinition-krcore-procedure.html' for "KR Core Procedure Profile" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1/StructureDefinition-krcore-vitalsigns.html' for "KR Core Observation Profile for Vital Signs" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1/ValueSet-krcore-doctor-qualification-codes.html' for "KR Core Doctor Qualification Codes" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1/downloads.html#examples' for "Examples" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1/downloads.html' for "Downloads" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1/general_guidance.html' for "General Guidance" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1/general_requirements.html#kr-core-conformance-artifacts' for "KR Core Conformance Artifacts" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1/general_requirements.html' for "General Requirements" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1/index.html#문서의-내용-및-안내' for "문서의 내용 및 안내" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1/index.html#배경' for "배경" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1/index.html#소개' for "소개" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1/index.html' for "http://www.hl7korea.or.kr/fhir/krcore/STU1" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1/must_support.html#의무-요소-및-필수-지원-요소-지정-규칙' for "의무 요소 및 필수 지원 요소 지정 규칙" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1/must_support.html' for "Mandatory and Must Support" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1/profiles_extensions.html' for "Profiles and Extensions" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1/terminology.html#fhir-r4-codesystems' for "CodeSystem" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1/terminology.html#fhir-r4-valuesets' for "ValueSet" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1/terminology.html' for "IG Home" cannot be resolved
+The link 'http://www.hl7korea.or.kr/fhir/krcore/STU1/terminology.html' for "Terminology" cannot be resolved
+The link 'must_support.html' for "필수 지원" cannot be resolved
+
+# The CodeSystem contains too many concepts to be defined entirely within a single CodeSystem resource.
+HL7 Defined CodeSystems should ensure that every concept has a definition
+
+# These codes are used to represent additional information.
+The code '필수예방접종' is not a valid code in this code system
+The code '국가예방접종' is not a valid code in this code system
+The code '기타예방접종' is not a valid code in this code system
+
+# Template error on the page describing the CapabilityStatement
+A definition could not be found for Canonical URL 'http://www.hl7korea.or.kr/fhir/krcore/StructureDefinition/krcore-capabilitystatement-client'
+A definition could not be found for Canonical URL 'http://www.hl7korea.or.kr/fhir/krcore/StructureDefinition/krcore-capabilitystatement-server'
+
+# The narratives for CodeSystem, ValueSet, NamingSystem, and SearchParameter have been intentionally omitted.
+Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)

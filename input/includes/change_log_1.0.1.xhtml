@@ -1,0 +1,72 @@
+{% raw %}
+<div>
+	<style type="text/css">
+		.level2	{margin-left: 10px;}
+	</style>
+	<div>
+		<details class="level2">
+			<!-- <summary><strong>세부내용 펼치기/접기</strong></summary> -->
+			<ol>
+				<li>
+					<a href="./StructureDefinition-krcore-condition-encounter-diagnosis.html">KR Core Condition Profile for Encounter Diagnosis</a> 정의 및 페이지 수정
+					<ul>
+						<li>KR CDI 항목 정의 변경을 반영하기 위해, 진단일자를 표현하기 위한 항목을 <a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/StructureDefinition-krcore-diagnosisDateTime.html">krcore-diagnosisDateTime</a>에서 recordedDate로 변경
+						</li>
+						<li>위 변경사항을 반영하여, <a href="./StructureDefinition-krcore-condition-encounter-diagnosis.html#kr-cdi-%EA%B4%80%EB%A0%A8%ED%95%AD%EB%AA%A9">KR CDI 관련항목 </a> 수정
+						</li>
+						<li><a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/StructureDefinition-krcore-condition-encounter-diagnosis.html#kr-core-search-parameters-defined">KR Core Search Parameters (defined)</a> 항목 및 해당 항목의 <a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/SearchParameter-krcore-sp-condition-diagnosis-date.html">krcore-sp-condition-diagnosis-date</a> search parameter 링크 제거
+						</li>
+						<li><a href="./StructureDefinition-krcore-condition-encounter-diagnosis.html#kr-core-search-parameters-derived">KR Core Search Parameters (derived)</a> 항목에 <a href="./SearchParameter-krcore-sp-condition-recorded-date.html">krcore-sp-condition-recorded-date</a> search parameter 링크 추가
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="./StructureDefinition-krcore-condition-chief-complaint.html">KR Core Condition Profile for Chief Complaint</a> 페이지 수정
+					<ul>
+						<li><a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/StructureDefinition-krcore-condition-chief-complaint.html#kr-core-search-parameters-defined">KR Core Search Parameters (defined)</a> 항목 및 해당 항목의 <a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/SearchParameter-krcore-sp-condition-diagnosis-date.html">krcore-sp-condition-diagnosis-date</a> search parameter 링크 제거
+						</li>
+						<li><a href="./StructureDefinition-krcore-condition-chief-complaint.html#kr-core-search-parameters-derived">KR Core Search Parameters (derived)</a> 항목에 <a href="./SearchParameter-krcore-sp-condition-recorded-date.html">krcore-sp-condition-recorded-date</a> search parameter 링크 추가
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/StructureDefinition-krcore-diagnosisDateTime.html">krcore-diagnosisDateTime</a> 확장 삭제
+				</li>
+				<li>
+					<a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/SearchParameter-krcore-sp-condition-diagnosis-date.html">krcore-sp-condition-diagnosis-date</a> search parameter 삭제
+				</li>
+				<li>
+					<a href="./SearchParameter-krcore-sp-condition-recorded-date.html">krcore-sp-condition-recorded-date</a> search parameter 추가		
+				</li>
+				<li>
+					<a href="./CapabilityStatement-krcore-capabilitystatement-server.html">KR Core Server CapabilityStatement</a> 정의 수정
+					<ul>
+						<li><a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/SearchParameter-krcore-sp-condition-diagnosis-date.html">krcore-sp-condition-diagnosis-date</a> search parameter 구현 기대치 삭제
+						</li>
+						<li><a href="./SearchParameter-krcore-sp-condition-recorded-date.html">krcore-sp-condition-recorded-date</a> search parameter 구현 기대치 추가
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="./CapabilityStatement-krcore-capabilitystatement-client.html">KR Core Client CapabilityStatement</a> 정의 수정
+					<ul>
+						<li><a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/SearchParameter-krcore-sp-condition-diagnosis-date.html">krcore-sp-condition-diagnosis-date</a> search parameter 구현 기대치 삭제
+						</li>
+						<li><a href="./SearchParameter-krcore-sp-condition-recorded-date.html">krcore-sp-condition-recorded-date</a> search parameter 구현 기대치 추가
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="./search_parameters.html">Search Parameters</a> 페이지 수정
+					<ul>
+						<li><a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/SearchParameter-krcore-sp-condition-diagnosis-date.html">krcore-sp-condition-diagnosis-date</a> search parameter 링크 제거
+						</li>
+						<li><a href="./SearchParameter-krcore-sp-condition-recorded-date.html">krcore-sp-condition-recorded-date</a> search parameter 링크 추가
+						</li>
+					</ul>
+				</li>
+			</ol>
+		</details>
+	</div>
+</div>
+{% endraw %}

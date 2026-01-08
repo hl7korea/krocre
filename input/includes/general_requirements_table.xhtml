@@ -1,0 +1,37 @@
+{% raw %}
+<div>
+		<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-ps66{font-size:11px;text-align:left;vertical-align:top}
+.tg .tg-fxij{background-color:#efefef;font-size:11px;font-weight:bold;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-fxij">검색 매개변수</th>
+    <th class="tg-fxij">요소의 자료형</th>
+    <th class="tg-fxij">최소날짜 정확도</th>
+    <th class="tg-fxij">예</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-ps66">date</td>
+    <td class="tg-ps66">date</td>
+    <td class="tg-ps66">day</td>
+    <td class="tg-ps66"><code class="language-plaintext highlighter-rouge">GET [base]/Patient?name=김환자&amp;birthdate=2001-01-01</code></td>
+  </tr>
+  <tr>
+    <td class="tg-ps66">date</td>
+    <td class="tg-ps66">dateTime, Period</td>
+    <td class="tg-ps66">second + time offset</td>
+    <td class="tg-ps66"><code class="language-plaintext highlighter-rouge">GET [base]/Observation?patient=krcore-patient-example-01&amp;category=vital-signs&amp;date=ge2021-01-01T00:00:00+09:00</code></td>
+  </tr>
+</tbody>
+</table>
+	</div>
+{% endraw %}

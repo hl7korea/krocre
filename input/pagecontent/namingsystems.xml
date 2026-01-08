@@ -1,0 +1,14 @@
+<div xmlns="http://www.w3.org/1999/xhtml">
+<li><a href="NamingSystem-ns-hira-edi-material.html">HIRA EDI Material</a> <p>건강보험심사평가원 EDI 치료재료 코드 명명체계</p></li>
+<li><a href="NamingSystem-ns-hira-edi-medication.html">HIRA EDI Medication</a> <p>건강보험심사평가원 EDI 약제 코드 명명체계</p></li>
+<li><a href="NamingSystem-ns-hira-edi-procedure.html">HIRA EDI Procedure</a> <p>건강보험심사평가원 EDI 진료행위 코드 명명체계</p></li>
+<li><a href="NamingSystem-ns-hira-healthcare-organization-identifier.html">HIRA Healthcare Organization Identifier</a> <p>건강보험심사평가원 요양기관 식별자 명명체계</p></li>
+<li><a href="NamingSystem-ns-hira-healthcare-organization-types.html">HIRA Healthcare Organization Types</a> <p>건강보험심사평가원 요양종별 코드 명명체계</p></li>
+<li><a href="NamingSystem-ns-hira-insurance-types.html">HIRA Insurance Types</a> <p>건강보험심사평가원 보험자구분 코드 명명체계</p></li>
+<li><a href="NamingSystem-ns-hira-medical-department.html">HIRA Medical Department</a> <p>건강보험심사평가원 진료과목 코드 명명체계</p></li>
+<li><a href="NamingSystem-ns-kostat-kcd-8.html">KOSTAT KCD8</a> <p>통계청 제8차 한국표준질병·사인분류표 코드 명명체계</p></li>
+<li><a href="NamingSystem-ns-kpis-kdcode.html">KPIS Korea Drug Code</a> <p>의약품관리종합정보센터 KD 코드 명명체계</p></li>
+<li><a href="NamingSystem-ns-mohw-md-license-id.html">MOHW MD License Id</a> <p>보건복지부 진료의 면허 식별자 명명체계</p></li>
+<li><a href="NamingSystem-ns-mohw-practitioner-qualification-types.html">MOHW Practitioner Qualification Types</a> <p>보건복지부 면허종별/자격종별 코드 명명체계</p></li>
+<li><a href="https://terminology.hl7.org/2.1.0/NamingSystem-v3-WC.html">WHO ATC</a> <p>세계보건기구협력센터 ATC 코드 명명체계</p></li>
+</div>

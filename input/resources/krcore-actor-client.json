@@ -1,0 +1,28 @@
+{
+  "resourceType": "ActorDefinition",
+  "id": "krcore-actordefinition-client",
+  "url": "http://www.hl7korea.or.kr/fhir/krcore/ActorDefinition/krcore-actordefinition-client",
+  "name": "KRCoreClient",
+  "title": "KR Core Client",
+  "status": "active",
+  "experimental": false,
+  "description": "KR Core Client는 KR Core의 요구사항을 충족하는 FHIR 리소스를 교류하기 위해, 데이터 접근을 요청하는 시스템이다.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "KR",
+          "display": "Korea, Republic of"
+        }
+      ]
+    }
+  ],
+  "purpose": "본 리소스 인스턴스는 KR Core Client를 정의하기 위한 목적으로 작성되었음.",
+  "type": "system",
+  "documentation": "KR Core Client는 [KR Core Client CapabilityStatement](CapabilityStatement-krcore-capabilitystatement-client.html)의 요구사항을 **반드시(SHALL)** 준수해야 한다.",
+  "reference": [
+    "http://www.hl7korea.or.kr/fhir/krcore"
+  ],
+  "capabilities": "http://www.hl7korea.or.kr/fhir/krcore/CapabilityStatement/krcore-capabilitystatement-client"
+}

@@ -1,0 +1,177 @@
+{% raw %}
+<div>
+    <style type="text/css">
+        .tg {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        .tg td {
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+        }
+
+        .tg th {
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            font-weight: normal;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+        }
+
+        .tg .tg-uqo3 {
+            background-color: #efefef;
+            font-weight: bold;
+            text-align: center;
+            vertical-align: top
+        }
+
+        .tg .tg-0lax {
+            font-size: 12px;
+            text-align: left;
+            vertical-align: top
+        }
+    </style>
+    <table class="tg" style="table-layout: fixed; width: 100%;">
+        <colgroup>
+            <col style="width: 15%;" />
+            <col style="width: 7%;" />
+            <col style="width: 39%;" />
+            <col style="width: 39%;" />
+        </colgroup>
+        <thead>
+            <tr>
+                <th class="tg-uqo3">코드</th>
+                <th class="tg-uqo3">지침 대상</th>
+                <th class="tg-uqo3">FHIR 기본 사양의 정의</th>
+                <th class="tg-uqo3">KR Core 내 해석</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="tg-0lax">SHALL:populate</td>
+                <td class="tg-0lax">리소스 생산자</td>
+                <td class="tg-0lax">
+                    • 리소스 생산자는 값이 알려져 있고 공유가 허용되는 경우, 이 요소를 <strong>반드시(SHALL)</strong> 포함해야 한다.<br>
+                    <br><i>참고:</i><br>
+                    • 이 처리 지침은, 리소스 생산자가 해당 요소의 올바른 값을 알고 있는 경우에는 언제나 그것을 채워 넣어야 함을 의미한다.<br>
+                    • 이것은 해당 요소가 반드시 존재해야 하는지를 나타내는 허용 개수와는 다른 개념이며, 이 코드가 할당된 요소는 값이 존재하지 않거나 공유가 금지되어 제한된 경우 생략될 수 있다.<br>
+                    • 시스템 검증 주체가 공유 가능 여부를 판단하는 규칙을 적합성 검증 과정의 일부로 공식 문서화해야 할 수도 있다(예: 규제, 동의 등).
+                </td>
+                <td class="tg-0lax">
+                    • KR Core에서는 SHALL:populate 코드를 항상 최소 허용 개수가 1 이상인 의무 요소에 한해서만 할당하고 있으며, 이 코드를 KR Core Server의 처리 지침으로만 사용하고 있다.<br>
+                    • KR Core Server는 항상 리소스 생산자의 역할을 담당하므로, SHALL:populate가 할당된 요소를 <strong>반드시(SHALL)</strong> 채워 넣어야 한다.<br>
+                    • 만약 해당 요소를 채워 넣을 때, 요소의 값이 존재하지 않거나 공유가 금지되어 제한된 경우에는 데이터 부재 사유를 <strong>반드시(SHALL)</strong> 제공해야 한다.<br>
+                    <br><i>참고:</i><br>
+                    • KR Core Server가 항상 리소스 생산자 역할을 담당하므로, 처리 지침 코드의 접두사를 <strong>반드시(SHALL)</strong>로 한정하였다.
+                </td>
+            </tr>
+            <tr>
+                <td class="tg-0lax">SHALL:able-to-populate</td>
+                <td class="tg-0lax">리소스 생산자</td>
+                <td class="tg-0lax">
+                    • 리소스 생산자는 이 요소를 <strong><strong>반드시(SHALL)</strong></strong> 올바르게 채워 넣을 수 있어야 한다.<br>
+                    <br><i>참고:</i><br>
+                    • 일반적으로 이는 적합성 검증 과정에서 시스템이 특정 조건에서는 이 요소를 올바른 값으로 채워 넣는다는 것을 입증해야 함을 의미한다.<br>
+                    • 이 처리 지침은 해당 요소가 어떤 상황에서 전송되어야 한다는 기대를 부과하는 것이 아니라, 적어도 일부 상황에서는 채워 넣을 수 있어야 함을 요구한다.
+                </td>
+                <td class="tg-0lax">
+                    • KR Core에서는 SHALL:able-to-populate 코드를 항상 최소 허용 개수가 0인 선택적 요소에 한해서만 할당하고 있으며, 이 코드를 KR Core Server의 처리 지침으로만 사용하고 있다.<br>
+                    • KR Core Server는 항상 리소스 생산자 역할을 담당하므로, 이 요소를 올바른 값으로 채워 넣을 수 있는 기능을 <strong>반드시(SHALL)</strong> 보유해야 한다.<br>
+                    • 올바른 값이 없거나 공유가 금지된 경우, 또는 기타 정책에 따라 해당 요소를 실제로 사용하지 않을 수 있다.<br>
+                    <br><i>참고:</i><br>
+                    • KR Core Server가 항상 리소스 생산자 역할을 담당하므로, 처리 지침 코드의 접두사를 <strong>반드시(SHALL)</strong>로 한정하였다.
+                </td>
+            </tr>
+            <tr>
+                <td class="tg-0lax">SHALL:reject-invalid</td>
+                <td class="tg-0lax">리소스 생산자</td>
+                <td class="tg-0lax">
+                    • 리소스 생산자는 이 처리 지침이 포함된 Profile 내에 명시된 모든 데이터 제약 조건을 이 요소의 값이 충족하는지를 <strong>반드시(SHALL)</strong>/<strong>가능한 한(SHOULD)</strong> 검사해야 한다.<br>
+                    • 유효성 문제가 발견되면, 시스템은 해당 인스턴스를 <strong>반드시(SHALL)</strong>/<strong>가능한 한(SHOULD)</strong> 수용하지 않아야 한다.<br>
+                    <br><i>참고:</i><br>
+                    • 이 의무는 해당 요소 자체의 유효성 검증에 적용되며, 그 요소가 참조하는 리소스에는 적용되지 않는다.
+                </td>
+                <td class="tg-0lax">
+                    • KR Core에서는 SHALL:reject-invalid 코드를 코드화된 데이터 요소(`code`, `Coding`, `CodeableConcept`)에 한해서만 할당하고 있으며, 이 코드를 KR Core Server의 처리 지침으로만 사용하고 있다.<br>
+                    • KR Core Server는 항상 리소스 생산자 역할을 담당하므로, SHALL:reject-invalid가 할당된 요소의 값으로 사용된 코드가 적합한지 검증할 의무가 있다.<br>
+                    • KR Core 또는 HL7 R4 기본 사양에서 해당 요소에 코드 집합을 바인딩 한 경우, KR Core Server는 해당 요소에 실제로 사용된 코드가 바인딩 된 코드 집합에 속하는지 <strong>반드시(SHALL)</strong> 검증해야 한다.<br>
+                    • 바인딩 되지 않은 추가 코드가 해당 요소에 사용된 경우, KR Core Server는 이 코드가 올바른지 <strong>가능한 한(SHOULD)</strong> 검증해야 한다.<br>
+                    • 추가 코드는 의료 서비스 제공 기관에서 정의하여 사용하는 지역 코드, 해당 요소에 바인딩 되지는 않았으나 코드체계가 알려져 있는 코드 등을 의미하며, 이 경우 KR Core Server는 해당 코드를 코드체계 범위 안에서 검증한다.<br>
+                    • 만약 추가 코드의 코드체계가 알려져 있지 않은 경우, KR Core Server는 해당 코드의 검증을 생략할 수 있다.<br>
+                    • KR Core 서버는 코드 집합이 바인딩 된 강도에 무관하게 이 처리 지침이 할당된 요소를 <strong>반드시(SHALL)</strong>/<strong>가능한 한(SHOULD)</strong> 검증해야 한다.<br>
+                    <br><i>참고:</i><br>
+                    • KR Core Server가 항상 리소스 생산자 역할을 담당하므로, 처리 지침 코드의 접두사를 <strong>반드시(SHALL)</strong>로 한정하였다.<br>
+                    • KR Core Server는 SHALL:reject-invalid 코드가 할당되지 않았더라도 리소스 인스턴스를 구성하는 모든 요소들에 올바른 데이터 유형(datatypes)의 값을 사용하였는지 <strong>반드시(SHALL)</strong> 검증해야 한다.
+                </td>
+            </tr>
+            <tr>
+                <td class="tg-0lax">SHOULD:populate</td>
+                <td class="tg-0lax">리소스 생산자</td>
+                <td class="tg-0lax">
+                    • 리소스 생산자는 값이 알려져 있고 공유가 허용되는 경우, 이 요소를 <strong>가능한 한(SHOULD)</strong> 포함해야 한다.<br>
+                    <br><i>참고:</i><br>
+                    • 이 처리 지침은, 생산자가 해당 요소의 올바른 값을 알고 있는 경우에는 그것을 채워 넣는 것이 바람직함을 의미한다.<br>
+                    • 이것은 해당 요소가 반드시 존재해야 하는지를 나타내는 허용 개수와는 다른 개념이며, 이 코드가 할당된 요소는 값이 존재하지 않거나 공유가 금지되어 제한된 경우 생략될 수 있다.<br>
+                    • 시스템 검증 주체가 공유 가능 여부를 판단하는 규칙을 적합성 검증 과정의 일부로 공식 문서화해야 할 수도 있다(예: 규제, 동의 등).
+                </td>
+                <td class="tg-0lax">
+                    • KR Core에서는 SHOULD:populate 코드를 항상 최소 허용 개수가 1 이상인 의무 요소에 한해서만 할당하고 있으며, 이 코드를 KR Core Client의 처리 지침으로만 사용하고 있다.<br>
+                    • KR Core Client는 특정 경우에만 리소스 생산자의 역할을 담당하므로, SHOULD:populate가 할당된 요소를 채워 넣는 기능을 구현하지 않을 수 있다.<br>
+                    • 그러나 KR Core Client가 리소스 생산자의 역할을 담당하여 리소스 생성 또는 수정 기능을 지원하는 경우, SHOULD:populate가 할당된 요소를 <strong>반드시(SHALL)</strong> 채워 넣어야 한다.<br>
+                    • 만약 해당 요소를 채워 넣을 때, 요소의 값이 존재하지 않거나 공유가 금지되어 제한된 경우에는 데이터 부재 사유를 <strong>반드시(SHALL)</strong> 제공해야 한다. <br>
+                    <br><i>참고:</i><br>
+                    • KR Core Client가 리소스 생성 또는 수정 기능을 지원하는 경우에만 리소스 생산자 역할을 담당하므로, 처리 지침 코드의 접두사를 <strong>가능한 한(SHOULD)</strong>으로 한정하였다.<br>
+                    • 시스템 검증 주체는 적합성 검증 과정에서 KR Core Client가 리소스 생산자 역할을 담당하도록 요구할 수 있다.
+                </td>
+            </tr>
+            <tr>
+                <td class="tg-0lax">SHOULD:able-to-populate</td>
+                <td class="tg-0lax">리소스 생산자</td>
+                <td class="tg-0lax">
+                    • 리소스 생산자는 이 요소를 <strong>가능한 한(SHOULD)</strong> 올바르게 채워 넣을 수 있어야 한다.<br>
+                    <br><i>참고:</i><br>
+                    • 일반적으로 이는 적합성 검증 과정에서 시스템이 특정 조건에서는 이 요소를 올바른 값(즉, 데이터 부재 사유나 그에 상응하는 값이 아닌 실제 값)으로 채워 넣는다는 것을 입증해야 함을 의미한다.<br>
+                    • 이 처리 지침은 해당 요소가 어떤 상황에서 전송되어야 한다는 기대를 부과하는 것이 아니라, 적어도 일부 상황에서는 채워 넣을 수 있어야 함을 요구한다.
+                </td>
+                <td class="tg-0lax">
+                    • KR Core에서는 SHOULD:able-to-populate 코드를 항상 최소 허용 개수가 0인 선택적 요소에 한해서만 할당하고 있으며, 이 코드를 KR Core Client의 처리 지침으로만 사용하고 있다.<br>
+                    • KR Core Client는 특정 경우에만 리소스 생산자의 역할을 담당하므로, SHOULD:able-to-populate가 할당된 요소를 채워 넣는 기능을 구현하지 않을 수 있다.<br>
+                    • 그러나 KR Core Client가 리소스 생산자의 역할을 담당하여 리소스 생성 또는 수정 기능을 지원하는 경우, SHOULD:populate가 할당된 요소를 올바른 값으로 채워 넣을 수 있는 기능을 <strong>반드시(SHALL)</strong> 보유해야 한다.<br>
+                    • KR Core Client가 리소스 생산자 역할을 담당하더라도 올바른 값이 없거나 공유가 금지된 경우, 또는 기타 정책에 따라 해당 요소를 실제로 사용하지 않을 수 있다.<br>
+                    <br><i>참고:</i><br>
+                    • KR Core Client가 리소스 생성 또는 수정 기능을 지원하는 경우에만 리소스 생산자 역할을 담당하므로, 처리 지침 코드의 접두사를 <strong>가능한 한(SHOULD)</strong>으로 한정하였다.<br>
+                    • 시스템 검증 주체는 적합성 검증 과정에서 KR Core Client가 리소스 생산자 역할을 담당하도록 요구할 수 있다.
+                </td>
+            </tr>
+            <tr>
+                <td class="tg-0lax">SHALL:no-error</td>
+                <td class="tg-0lax">리소스 소비자</td>
+                <td class="tg-0lax">
+                    • 리소스 소비자는 이 요소에 대해 유효한 값이 포함된 리소스를 오류 없이 <strong>반드시(SHALL)</strong>/<strong>가능한 한(SHOULD)</strong> 수용해야 한다.<br>
+                    <br><i>참고:</i><br>
+                    • 시스템은 해당 값을 올바르게 처리할 수 없다는 사실을 사용자에게 알리거나, 사용된 값을 무시할 수는 있지만, 이 요소가 존재한다는 이유만으로 리소스 인스턴스를 거부할 수는 없다(이러한 거부는 이 처리 지침이 없는 요소의 경우에는 허용될 수 있다).<br>
+                    • 제공된 값이 유효하지 않거나 특정 비즈니스 규칙을 위반하는 경우에는 시스템이 오류를 <strong>선택적(MAY)</strong>으로 발생시킬 수 있다.<br>
+                    • 이 처리 지침은 실제 값 대신 확장만 포함된 요소에도 적용되며, 해당 확장이 리소스 소비자의 처리 지침으로 허용된 경우에도 마찬가지이다.</td>
+                <td class="tg-0lax">
+                    • KR Core에서는 SHALL:no-error 코드를 모든 요소에 할당하고 있으며, 이 코드를 KR Core Client의 처리 지침으로만 사용하고 있다.<br>
+                    • KR Core Client는 항상 리소스 소비자의 역할을 담당하므로, SHALL:no-error가 할당된 요소에 유효한 값이 채워져 있거나, 실제 값 대신 데이터 부재 사유가 채워져 있는 경우에는 <strong>반드시(SHALL)</strong> 이 요소를 올바르게 처리할 수 있어야 한다.<br>
+                    • 만약 SHALL:no-error가 할당된 의무 요소에 유효하지 않은 값을 채우거나, 실제 값 또는 데이터 부재 사유 대신 임의의 확장을 채운 경우, KR Core Client는 이 요소를 올바르게 처리할 수 없음을 사용자에게 알리거나 오류로 간주할 수 있다.<br>
+                    • 만약 SHALL:no-error가 할당된 선택적 요소에 유효하지 않은 값을 채우거나, 실제 값 또는 데이터 부재 사유 대신 임의의 확장을 채운 경우, KR Core Client는 해당 요소 또는 해당 요소의 값을 무시할 수 있다.<br>
+                    <br><i>참고:</i><br>
+                    • KR Core Client가 항상 리소스 소비자 역할을 담당하므로, 처리 지침 코드의 접두사를 <strong>반드시(SHALL)</strong>로 한정하였다.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+{% endraw %}

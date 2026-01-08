@@ -1,0 +1,215 @@
+{% raw %}
+<div>
+	<style type="text/css">
+		.level2	{margin-left: 10px;}
+	</style>
+	<div>
+		<details class="level2">
+			<!-- <summary><strong>세부내용 펼치기/접기</strong></summary> -->
+			<ol>
+				<li>
+					<a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/terminology.html">IG Home</a> 페이지 수정
+					<ul>
+						<li>KR Core IG는 HL7 FHIR R4를 기반으로함을 명시</li>
+						<li>개발 주체가 한국보건의료정보원과 HL7 Korea임을 명시</li>
+						<li>
+							<a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/index.html#소개">소개</a> 수정</li>
+						<li>
+							<a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/index.html#배경">배경</a> 수정</li>
+						<li>
+							<a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/index.html#문서의-내용-및-안내">문서의 내용 및 안내</a> 수정</li>
+					</ul>
+				</li>
+				<li>
+					<a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/general_requirements.html">General Requirements</a> 페이지 수정
+					<ul>
+						<li>
+							<a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/general_requirements.html#kr-core-conformance-artifacts">KR Core Conformance Artifacts</a> 단락에 <a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/profiles_extensions.html">Profiles and Extensions</a> 페이지 링크 추가</li>
+						<li>전체적인 표현 통일</li>
+					</ul>
+				</li>
+				<li>
+					<a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/must_support.html">Mandatory and Must Support</a> 페이지 수정
+					<ul>
+						<li>의무 요소와 필수 지원 요소에 대한 설명을 KR Core 1.0.0 버전의 정의에 맞게 수정</li>
+						<li>
+							<a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/must_support.html#의무-요소-및-필수-지원-요소-지정-규칙">의무 요소 및 필수 지원 요소 지정 규칙</a> 단락 추가</li>
+					</ul>
+				</li>
+				<li>
+					<a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/general_guidance.html">General Guidance</a> 페이지 수정
+					<ul>
+						<li>전체적인 표현 통일</li>
+					</ul>
+				</li>
+				<li>
+					<a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/terminology.html">Terminology</a> 페이지 수정
+					<ul>
+						<li>HL7 FHIR R4 기본 <a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/terminology.html#fhir-r4-codesystems">CodeSystem</a>, <a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/terminology.html#fhir-r4-valuesets">ValueSet</a> 링크 추가</li>
+					</ul>
+				</li>
+				<li>
+					<a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/downloads.html">Downloads</a> 페이지 수정
+					<ul>
+						<li>
+							<a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/downloads.html#examples">Examples</a> 단락의 예제 다운로드 시, 압축파일에 예제가 아닌 리소스들이 포함되어 있는 오류를 수정</li>
+					</ul>
+				</li>
+				<li>
+					<a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/CapabilityStatement-krcore-capabilitystatement-server.html">KR Core Server CapabilityStatement</a> 페이지 수정
+					<ul>
+						<li>KR Core Server의 기능별 지원 기대치 테이블 추가</li>
+					</ul>
+				</li>
+				<li>
+					<a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/CapabilityStatement-krcore-capabilitystatement-client.html">KR Core Client CapabilityStatement</a> 페이지 수정
+					<ul>
+						<li>KR Core Client의 기능별 지원 기대치 테이블 추가</li>
+					</ul>
+				</li>
+				<li>
+					<a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/CodeSystem-mohw-practitioner-qualification-types.html">CodeSystem: MOHW Practitioner Qualification Types</a> 수정
+					<ul>
+						<li>class 속성 삭제</li>
+						<li>display 오타 수정</li>
+					</ul>
+				</li>
+				<li>
+					<a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/StructureDefinition-krcore-allergyintolerance.html">KR Core AllergyIntolerance Profile</a> 수정
+					<ul>
+						<li>AllergyIntolerance.code 설명을 &#39;알레르기 및 불내성 반응 원인물질&#39;에서 &#39;알레르기 및 불내성 반응 원인물질 및 증상&#39;으로 수정</li>
+						<li>AllergyIntolerance.code에 example 강도로 바인딩 된 ValueSet을 <a href="http://hl7.org/fhir/R4/valueset-substance-code.html">SubstanceCode</a>에서 <a href="http://hl7.org/fhir/R4/valueset-allergyintolerance-code.html">AllergyIntoleranceSubstance/Product,ConditionAndNegationCodes</a>으로 수정</li>
+						<li>AllergyIntolerance.code.coding:ATC slicing의 최대 사용 횟수를 무제한에서 1로 감소</li>
+						<li>AllergyIntolerance.code.coding:ATC slicing의 system 값을 다음 값으로 명시: <a href="http://www.whocc.no/atc">http://www.whocc.no/atc</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/StructureDefinition-krcore-condition-chief-complaint.html">KR Core Condition Profile for Chief Complaint</a> 수정
+					<ul>
+						<li>Condition.code 최소 사용 횟수 0에서 1로 증가 및 HL7 FHIR R4 사양으로 제공되는 기본 ValueSet을 명시</li>
+					</ul>
+				</li>
+				<li>
+					<a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/StructureDefinition-krcore-condition-encounter-diagnosis.html">KR Core Condition Profile for Encounter Diagnosis</a> 수정
+					<ul>
+						<li>Condition.code.coding:KCD-8 slicing의 system 값을 다음 값으로 명시: <a href="http://www.hl7korea.or.kr/CodeSystem/kostat-kcd-8">http://www.hl7korea.or.kr/CodeSystem/kostat-kcd-8</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/StructureDefinition-krcore-diagnosticreport-diagnostic-imaging.html">KR Core DiagnosticReport Profile for Diagnostic Imaging</a> 수정
+					<ul>
+						<li>DiagnosticReport.code.coding:EDI slicing의 최소 사용 횟수를 1에서 0으로 완화</li>
+						<li>DiagnosticReport.code.coding:EDI slicing의 system 값을 다음 값으로 명시: <a href="http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure">http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/StructureDefinition-krcore-diagnosticreport-function-tests.html">KR Core DiagnosticReport Profile for Functional Tests</a> 수정
+					<ul>
+						<li>DiagnosticReport.code.coding:EDI slicing의 최소 사용 횟수를 1에서 0으로 완화</li>
+						<li>DiagnosticReport.code.coding:EDI slicing의 system 값을 다음 값으로 명시: <a href="http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure">http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/StructureDefinition-krcore-diagnosticreport-laboratory-results.html">KR Core DiagnosticReport Profile for Laboratory Results</a> 수정
+					<ul>
+						<li>DiagnosticReport.code.coding:EDI slicing의 최소 사용 횟수를 1에서 0으로 완화</li>
+						<li>DiagnosticReport.code.coding:EDI slicing의 system 값을 다음 값으로 명시: <a href="http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure">http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/StructureDefinition-krcore-diagnosticreport-pathology-results.html">KR Core DiagnosticReport Profile for Pathology Results</a> 수정
+					<ul>
+						<li>DiagnosticReport.code.coding:EDI slicing의 최소 사용 횟수를 1에서 0으로 완화</li>
+						<li>DiagnosticReport.code.coding:EDI slicing의 system 값을 다음 값으로 명시: <a href="http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure">http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/StructureDefinition-krcore-immunization.html">KR Core Immunization Profile</a> 수정
+					<ul>
+						<li>Immunization.vaccineCode.coding:VcntType slicing의 system 값을 다음 값으로 명시: <a href="http://www.hl7korea.or.kr/fhir/krcore/CodeSystem/krcore-vcnt-types">http://www.hl7korea.or.kr/fhir/krcore/CodeSystem/krcore-vcnt-types</a>
+						</li>
+						<li>Immunization.vaccineCode.coding:KDCode slicing의 system 값을 다음 값으로 명시: <a href="http://www.hl7korea.or.kr/CodeSystem/kpis-kdcode">http://www.hl7korea.or.kr/CodeSystem/kpis-kdcode</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/StructureDefinition-krcore-medication.html">KR Core Medication Profile</a> 수정
+					<ul>
+						<li>Medication.code.coding:EDI slicing의 최소 사용 횟수를 1에서 0으로 완화</li>
+						<li>Medication.code.coding:EDI slicing의 system 값을 다음 값으로 명시: <a href="http://www.hl7korea.or.kr/CodeSystem/hira-edi-medication">http://www.hl7korea.or.kr/CodeSystem/hira-edi-medication</a>
+						</li>
+						<li>Medication.itemCodeableConcept.coding:ATC slicing의 system 값을 다음 값으로 명시: <a href="http://www.whocc.no/atc">http://www.whocc.no/atc</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/StructureDefinition-krcore-observation-function-test.html">KR Core Observation Profile for Functional Test</a> 수정
+					<ul>
+						<li>사용처에 대한 설명을 다음과 같이 변경: KR Core의 기능검사 측정 정보에 적용되는 Observation 구조. 기능검사는 진단검사, 영상검사, 병리검사를 제외한 검사를 의미함. (예: 과내검사)</li>
+						<li>Observation.code.coding:EDI slicing의 최소 사용 횟수를 1에서 0으로 완화</li>
+						<li>Observation.code.coding:EDI slicing의 system 값을 다음 값으로 명시: <a href="http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure">http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/StructureDefinition-krcore-observation-laboratory-result.html">KR Core Observation Profile for Laboratory Result</a> 수정
+					<ul>
+						<li>Observation.code.coding:EDI slicing의 최소 사용 횟수를 1에서 0으로 완화</li>
+						<li>Observation.code.coding:EDI slicing의 system 값을 다음 값으로 명시: <a href="http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure">http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/StructureDefinition-krcore-vitalsigns.html">KR Core Observation Profile for Vital Signs</a> 수정
+					<ul>
+						<li>Observation.code.coding:Loinc slicing의 system 값을 다음 값으로 명시: <a href="http://loinc.org">http://loinc.org</a>
+						</li>
+						<li>Observation.componenet.code.coding:Loinc slicing의 system 값을 다음 값으로 명시: <a href="http://loinc.org">http://loinc.org</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/StructureDefinition-krcore-patient.html">KR Core Patient Profile</a> 수정
+					<ul>
+						<li>Patient.contact.address에 krcore-roadNameAddress 확장을 추가</li>
+						<li>
+							<a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/Patient-krcore-patient-example-02.html">krcore-patient-example-02</a>를 수정하여, 병원에서 임의의 identifier를 정의하고 환자 ID를 사용하는 예를 추가.</li>
+					</ul>
+				</li>
+				<li>
+					<a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/StructureDefinition-krcore-medical-doctor.html">KR Core Practitioner Profile for Medical Doctor</a> 수정
+					<ul>
+						<li>Practitioner.address에 krcore-roadNameAddress 확장을 추가</li>
+						<li>Practitioner.qualification.code.coding의 slicing을 제거하고, Practitioner.qualification.code에 <a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/ValueSet-krcore-doctor-qualification-codes.html">KR Core Doctor Qualification Codes</a>을 preferred 강도로 바인딩</li>
+					</ul>
+				</li>
+				<li>
+					<a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/StructureDefinition-krcore-procedure.html">KR Core Procedure Profile</a> 수정
+					<ul>
+						<li>Procedure.code.coding:EDI slicing의 최소 사용 횟수를 1에서 0으로 완화</li>
+						<li>Procedure.code.coding:EDI slicing의 system 값을 다음 값으로 명시: <a href="http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure">http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					Search Parameters
+					<ul>
+						<li>Condition 리소스의 <a href="http://www.hl7korea.or.kr/fhir/krcore/STU1/SearchParameter-krcore-sp-condition-diagnosis-date.html">diagnosis-date</a> search parameter 설명을 &#39;주호소 진단일자&#39;에서 &#39;진단일자&#39;로 수정</li>
+					</ul>
+				</li>
+				<li>
+					각 페이지 상단에 HL7 Korea 로고 및 HL7 FHIR 로고 추가
+				</li>
+				<li>Snapshot Table의 미번역 된 설명을 번역</li>
+				<li>Differential Table 및 Snapshot Table의 간격 수정</li>
+			</ol>
+		</details>
+	</div>
+</div>
+{% endraw %}

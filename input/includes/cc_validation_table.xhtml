@@ -1,0 +1,147 @@
+{% raw %}
+<div>
+		<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-ps66{font-size:11px;text-align:left;vertical-align:top}
+.tg .tg-fxij{background-color:#efefef;font-size:11px;font-weight:bold;text-align:left;vertical-align:top}
+.tg-nowrap {
+  white-space: nowrap;
+}
+.centered-cell {
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-fxij tg-nowrap centered-cell" rowspan="2">바인딩 강도</th>
+    <th class="tg-fxij tg-nowrap centered-cell" rowspan="2">바인딩 된 코드화된 개념 사용</th>
+    <th class="tg-fxij tg-nowrap centered-cell" colspan="2">바인딩 되지 않은 코드화된 개념 사용</th>
+    <th class="tg-fxij tg-nowrap centered-cell" rowspan="2">서버 기대 동작</th>
+    <th class="tg-fxij tg-nowrap centered-cell" rowspan="2">우선 순위</th>
+    <th class="tg-fxij centered-cell" rowspan="2">설명</th>
+  </tr>
+  <tr>
+    <th class="tg-fxij tg-nowrap centered-cell">알려진 코드체계만 사용</th>
+    <th class="tg-fxij tg-nowrap centered-cell">유효한 코드만 사용</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-ps66 tg-nowrap centered-cell">Required</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">O</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">-</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">-</td>
+    <td class="tg-ps66 tg-nowrap centered-cell"><strong>반드시(SHALL)</strong><br>수용</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">1</td>
+    <td class="tg-ps66">바인딩 된 코드화된 개념을 사용한 Coding만 제공하는 경우, KR Core Server는 이 요소의 처리를 <strong>반드시(SHALL)</strong> 수용해야 한다</td>
+  </tr>
+  <tr>
+    <td class="tg-ps66 tg-nowrap centered-cell">Required</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">O</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">O</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">O</td>
+    <td class="tg-ps66 tg-nowrap centered-cell"><strong>반드시(SHALL)</strong><br>수용</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">1</td>
+    <td class="tg-ps66">바인딩 된 코드화된 개념을 사용한 Coding을 하나 이상 제공하고, 추가 Coding으로 유효한 코드화된 개념들만 제공하는 경우, KR Core Server는 이 요소의 처리를 <strong>반드시(SHALL)</strong> 수용해야 한다</td>
+  </tr>
+  <tr>
+    <td class="tg-ps66 tg-nowrap centered-cell">Required</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">O</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">O</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">X</td>
+    <td class="tg-ps66 tg-nowrap centered-cell"><strong>가능한 한(SHOULD)</strong><br>거부</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">2</td>
+    <td class="tg-ps66">바인딩 된 코드화된 개념을 사용한 Coding을 하나 이상 제공하고, 추가 Coding으로 제공한 코드화된 개념 중 유효하지 않은 코드를 사용한 경우, KR Core Server는 이 요소의 처리를 <strong>가능한 한(SHOULD)</strong> 거부해야 한다</td>
+  </tr>
+  <tr>
+    <td class="tg-ps66 tg-nowrap centered-cell">Required</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">O</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">X</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">-</td>
+    <td class="tg-ps66 tg-nowrap centered-cell"><strong>가능한 한(SHOULD)</strong><br>수용</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">3</td>
+    <td class="tg-ps66">바인딩 된 코드화된 개념을 사용한 Coding을 하나 이상 제공하고, 추가 Coding으로 제공한 코드화된 개념 중 알려지지 않은 코드체계를 사용한 경우, KR Core Server는 이 요소의 처리를 <strong>가능한 한(SHOULD)</strong> 수용해야 한다</td>
+  </tr>
+  <tr>
+    <td class="tg-ps66 tg-nowrap centered-cell">Required</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">X</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">-</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">-</td>
+    <td class="tg-ps66 tg-nowrap centered-cell"><strong>반드시(SHALL)</strong><br>거부</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">1</td>
+    <td class="tg-ps66">바인딩 된 코드화된 개념을 사용한 Coding을 제공하지 않는 경우, KR Core Server는 이 요소의 처리를 <strong>반드시(SHALL)</strong> 거부해야 한다</td>
+  </tr>
+
+  <tr>
+    <td class="tg-ps66 tg-nowrap centered-cell">Extensible</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">O</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">-</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">-</td>
+    <td class="tg-ps66 tg-nowrap centered-cell"><strong>반드시(SHALL)</strong><br>수용</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">1</td>
+    <td class="tg-ps66">바인딩 된 코드화된 개념을 사용한 Coding만 제공하는 경우, KR Core Server는 이 요소의 처리를 <strong>반드시(SHALL)</strong> 수용해야 한다</td>
+  </tr>
+  <tr>
+    <td class="tg-ps66 tg-nowrap centered-cell">Extensible</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">O</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">O</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">O</td>
+    <td class="tg-ps66 tg-nowrap centered-cell"><strong>반드시(SHALL)</strong><br>수용</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">1</td>
+    <td class="tg-ps66">바인딩 된 코드화된 개념을 사용한 Coding을 하나 이상 제공하고, 추가 Coding으로 유효한 코드화된 개념들만 제공하는 경우, KR Core Server는 이 요소의 처리를 <strong>반드시(SHALL)</strong> 수용해야 한다</td>
+  </tr>
+  <tr>
+    <td class="tg-ps66 tg-nowrap centered-cell">Extensible</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">O</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">O</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">X</td>
+    <td class="tg-ps66 tg-nowrap centered-cell"><strong>가능한 한(SHOULD)</strong><br>거부</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">2</td>
+    <td class="tg-ps66">바인딩 된 코드화된 개념을 사용한 Coding을 하나 이상 제공하고, 추가 Coding으로 제공한 코드화된 개념 중 유효하지 않은 코드를 사용한 경우, KR Core Server는 이 요소의 처리를 <strong>가능한 한(SHOULD)</strong> 거부해야 한다</td>
+  </tr>
+  <tr>
+    <td class="tg-ps66 tg-nowrap centered-cell">Extensible</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">O</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">X</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">-</td>
+    <td class="tg-ps66 tg-nowrap centered-cell"><strong>가능한 한(SHOULD)</strong><br>수용</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">3</td>
+    <td class="tg-ps66">바인딩 된 코드화된 개념을 사용한 Coding을 하나 이상 제공하고, 추가 Coding으로 제공한 코드화된 개념 중 알려지지 않은 코드체계를 사용한 경우, KR Core Server는 이 요소의 처리를 <strong>가능한 한(SHOULD)</strong> 수용해야 한다</td>
+  </tr>
+  <tr>
+    <td class="tg-ps66 tg-nowrap centered-cell">Extensible</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">X</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">O</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">O</td>
+    <td class="tg-ps66 tg-nowrap centered-cell"><strong>반드시(SHALL)</strong><br>수용</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">1</td>
+    <td class="tg-ps66">바인딩 된 코드화된 개념을 사용한 Coding을 제공하지 않고, 추가 Coding으로 유효한 코드화된 개념들만 제공하는 경우, KR Core Server는 이 요소의 처리를 <strong>반드시(SHALL)</strong> 수용해야 한다</td>
+  </tr>
+  <tr>
+    <td class="tg-ps66 tg-nowrap centered-cell">Extensible</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">X</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">O</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">X</td>
+    <td class="tg-ps66 tg-nowrap centered-cell"><strong>가능한 한(SHOULD)</strong><br>거부</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">2</td>
+    <td class="tg-ps66">바인딩 된 코드화된 개념을 사용한 Coding을 제공하지 않고, 추가 Coding으로 제공한 코드화된 개념 중 유효하지 않은 코드를 사용한 경우, KR Core Server는 이 요소의 처리를 <strong>가능한 한(SHOULD)</strong> 거부해야 한다</td>
+  </tr>
+  <tr>
+    <td class="tg-ps66 tg-nowrap centered-cell">Extensible</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">X</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">X</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">-</td>
+    <td class="tg-ps66 tg-nowrap centered-cell"><strong>가능한 한(SHOULD)</strong><br>수용</td>
+    <td class="tg-ps66 tg-nowrap centered-cell">3</td>
+    <td class="tg-ps66">바인딩 된 코드화된 개념을 사용한 Coding을 제공하지 않고, 추가 Coding으로 제공한 코드화된 개념 중 알려지지 않은 코드체계를 사용한 경우, KR Core Server는 이 요소의 처리를 <strong>가능한 한(SHOULD)</strong> 수용해야 한다</td>
+  </tr>
+</tbody>
+</table>
+	</div>
+{% endraw %}

@@ -1,0 +1,264 @@
+{% raw %}
+<div>
+	<style type="text/css">
+		.level2	{margin-left: 10px;}
+	</style>
+	<div>
+		<details class="level2">
+			<ol>
+				<li>
+					신규 KR Core 프로파일(Profile)
+					<ul>
+						<li><a href="./StructureDefinition-krcore-organization.html">KR Core Organization Profile</a></li>
+						<li><a href="./StructureDefinition-krcore-practitioner.html">KR Core Practitioner Profile</a></li>
+						<li><a href="./StructureDefinition-krcore-practitioner-role.html">KR Core PractitionerRole Profile</a></li>
+						<li><a href="./StructureDefinition-krcore-specimen.html">KR Core Specimen Profile</a></li>
+					</ul>
+				</li>
+
+				<li>
+					신규 KR Core 확장(Extension)
+					<ul>
+						<li><a href="./StructureDefinition-krcore-medicationIngredient.html">KR Core Medication Ingredient Extension</a></li>
+					</ul>
+				</li>
+
+				<li>
+					신규 코드체계(CodeSystem)
+					<ul>
+						<li><a href="./CodeSystem-krcore-procedure-category-types.html">KR Core Procedure Category Types</a></li>
+					</ul>
+				</li>
+
+				<li>
+					신규 코드집합(ValueSet)
+					<ul>
+						<li><a href="./ValueSet-krcore-snomed-ct-codes.html">KR Core SNOMED CT Codes</a></li>
+						<li><a href="./ValueSet-krcore-loinc-codes.html">KR Core LOINC Codes</a></li>
+						<li><a href="./ValueSet-krcore-diagnostic-imaging-codes.html">KR Core Diagnostic Imaging Codes</a></li>
+						<li><a href="./ValueSet-krcore-laboratory-codes.html">KR Core Laboratory Codes</a></li>
+						<li><a href="./ValueSet-krcore-pathology-codes.html">KR Core Pathology Codes</a></li>
+						<li><a href="./ValueSet-krcore-procedure-category-codes.html">KR Core Procedure Category Codes</a></li>
+						<li><a href="./ValueSet-krcore-procedure-codes.html">KR Core Procedure Codes</a></li>
+						<li><a href="./ValueSet-krcore-specimen-type-codes.html">KR Core Specimen Type Codes</a></li>
+					</ul>
+				</li>
+
+				<li>
+					슬라싱 제거 및 바인딩 방식 변경
+					<ul>
+						<li>아래 항목들의 슬라이싱을 제거하고, 바인딩 강도를 이용해 용어 사용 필수 여부를 표현하도록 변경
+							<ul>
+								<li><a href="./StructureDefinition-krcore-allergyintolerance.html">KR Core AllergyItolerance Profile</a>: AllergyItolerance.code
+									<ul>
+										<li>바인딩 코드집합: <a href="./ValueSet-krcore-atc-codes.html">ATC Codes</a></li>
+										<li>바인딩 강도: <a href="https://hl7.org/fhir/R4/terminologies.html#preferred">Preferred</a></li>
+									</ul>
+								</li>
+								<li><a href="./StructureDefinition-krcore-condition-encounter-diagnosis.html">KR Core Condition Profile for Encounter Diagnosis</a>: Condition.code
+									<ul>
+										<li>바인딩 코드집합: <a href="./ValueSet-krcore-condition-category-codes.html">KR Core Condition Category Codes</a></li>
+										<li>바인딩 강도: <a href="https://hl7.org/fhir/R4/terminologies.html#extensible">Extensible</a></li>
+									</ul>
+								</li>
+								<li><a href="./StructureDefinition-krcore-diagnosticreport-diagnostic-imaging.html">KR Core DiagnosticReport Profile for Diagnostic Imaging</a>: DiagnosticReport.code
+									<ul>
+										<li>바인딩 코드집합: <a href="./ValueSet-krcore-diagnostic-imaging-codes.html">KR Core Diagnostic Imaging Codes</a> (신규)</li>
+										<li>바인딩 강도: <a href="https://hl7.org/fhir/R4/terminologies.html#extensible">Extensible</a></li>
+									</ul>
+								</li>
+								<li><a href="./StructureDefinition-krcore-diagnosticreport-function-tests.html">KR Core DiagnosticReport Profile for Functional Tests</a>: DiagnosticReport.code
+									<ul>
+										<li>바인딩 코드집합: <a href="./ValueSet-krcore-edi-procedure-codes.html">KR Core EDI Procedure Codes</a></li>
+										<li>바인딩 강도: <a href="https://hl7.org/fhir/R4/terminologies.html#extensible">Extensible</a></li>
+									</ul>
+								</li>
+								<li><a href="./StructureDefinition-krcore-diagnosticreport-laboratory-results.html">KR Core DiagnosticReport Profile for Laboratory Results</a>: DiagnosticReport.code
+									<ul>
+										<li>바인딩 코드집합: <a href="./ValueSet-krcore-laboratory-codes.html">KR Core Laboratory Codes</a></li>
+										<li>바인딩 강도: <a href="https://hl7.org/fhir/R4/terminologies.html#extensible">Extensible</a></li>
+									</ul>
+								</li>
+								<li><a href="./StructureDefinition-krcore-diagnosticreport-pathology-results.html">KR Core DiagnosticReport Profile for Pathology Results</a>: DiagnosticReport.code
+									<ul>
+										<li>바인딩 코드집합: <a href="./ValueSet-krcore-pathology-codes.html">KR Core Pathology Codes</a></li>
+										<li>바인딩 강도: <a href="https://hl7.org/fhir/R4/terminologies.html#extensible">Extensible</a></li>
+									</ul>
+								</li>
+								<li><a href="./StructureDefinition-krcore-observation-function-test.html">KR Core Observation Profile for Functional Test</a>: Observation.code
+									<ul>
+										<li>바인딩 코드집합: <a href="./ValueSet-krcore-edi-procedure-codes.html">KR Core EDI Procedure Codes</a></li>
+										<li>바인딩 강도: <a href="https://hl7.org/fhir/R4/terminologies.html#extensible">Extensible</a></li>
+									</ul>
+								</li>
+								<li><a href="./StructureDefinition-krcore-observation-laboratory-result.html">KR Core Observation Profile for Laboratory Result</a>: Observation.code
+									<ul>
+										<li>바인딩 코드집합: <a href="./ValueSet-krcore-laboratory-codes.html">KR Core Laboratory Codes</a></li>
+										<li>바인딩 강도: <a href="https://hl7.org/fhir/R4/terminologies.html#extensible">Extensible</a></li>
+									</ul>
+								</li>
+								<li><a href="./StructureDefinition-krcore-medication.html">KR Core Medication Profile</a>: Medication.code
+									<ul>
+										<li>바인딩 코드집합: <a href="./ValueSet-krcore-edi-medication-codes.html">KR Core EDI Medication Codes</a></li>
+										<li>바인딩 강도: <a href="https://hl7.org/fhir/R4/terminologies.html#extensible">Extensible</a></li>
+									</ul>
+								</li>
+								<li><a href="./StructureDefinition-krcore-medication.html">KR Core Medication Profile</a>: Medication.ingredient.itemCodeableConcept
+									<ul>
+										<li>바인딩 코드집합: <a href="./ValueSet-krcore-atc-codes.html">ATC Codes</a></li>
+										<li>바인딩 강도: <a href="https://hl7.org/fhir/R4/terminologies.html#preferred">Preferred</a></li>
+									</ul>
+								</li>
+								<li><a href="./StructureDefinition-krcore-healthcare-organization.html">KR Core Healthcare Organization Profile</a>: Organization.type
+									<ul>
+										<li>바인딩 코드집합: <a href="./ValueSet-krcore-healthcare-organization-type-codes.html">KR Core Organization Type Codes</a></li>
+										<li>바인딩 강도: <a href="https://hl7.org/fhir/R4/terminologies.html#required">Required</a></li>
+									</ul>
+								</li>
+								<li><a href="./StructureDefinition-krcore-procedure.html">KR Core Procedure Profile</a>: Procedure.code
+									<ul>
+										<li>바인딩 코드집합: <a href="./ValueSet-krcore-procedure-codes.html">KR Core Procedure Codes</a></li>
+										<li>바인딩 강도: <a href="https://hl7.org/fhir/R4/terminologies.html#extensible">Extensible</a></li>
+									</ul>
+								</li>
+								<li><a href="./StructureDefinition-krcore-insuranceTypes.html">KR Core Insurance Types Extension</a>: Extension.valueCodeableConcept
+									<ul>
+										<li>바인딩 코드집합: <a href="./ValueSet-krcore-insurance-types-codes.html">KR Core Insurance Types Codes</a></li>
+										<li>바인딩 강도: <a href="https://hl7.org/fhir/R4/terminologies.html#required">Required</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+
+				<li>
+					<a href="./StructureDefinition-krcore-bloodpressure.html">KR Core Observation Profile for Vital Signs: Blood Pressure</a> 수정 사항
+					<ul>
+						<li>요소별 허용 개수(Cardinality) 수정</li>
+						<ul>
+							<li>Observation.componenet:Systolic</li>
+							<ul>
+								<li>기존: 1..1</li>
+								<li>현재: 0..1</li>
+							</ul>
+							<li>Observation.componenet:Diastolic</li>
+							<ul>
+								<li>기존: 1..1</li>
+								<li>현재: 0..1</li>
+							</ul>
+						</ul>
+					</ul>
+				</li>
+				
+				<li>
+					<a href="./StructureDefinition-krcore-condition-encounter-diagnosis.html">KR Core Condition Profile for Encounter Diagnosis</a> 추가 수정 사항
+					<ul>
+						<li>요소별 허용 개수(Cardinality) 수정</li>
+						<ul>
+							<li>Condition.clinicalStatus</li>
+							<ul>
+								<li>기존: 1..1</li>
+								<li>현재: 0..1</li>
+							</ul>
+						</ul>
+					</ul>
+				</li>
+
+				<li>
+					<a href="./StructureDefinition-krcore-diagnosticreport-laboratory-results.html">KR Core DiagnosticReport Profile for Laboratory Results</a> 추가 수정 사항
+					<ul>
+						<li>신규 요소</li>
+						<ul>
+							<li>DiagnosticReport.specimen</li>
+						</ul>
+					</ul>
+				</li>
+
+				<li>
+					<a href="./StructureDefinition-krcore-diagnosticreport-pathology-results.html">KR Core DiagnosticReport Profile for Pathology Results</a> 추가 수정 사항
+					<ul>
+						<li>신규 요소</li>
+						<ul>
+							<li>DiagnosticReport.specimen</li>
+						</ul>
+					</ul>
+				</li>
+
+				<li>
+					<a href="./StructureDefinition-krcore-observation-laboratory-result.html">KR Core Observation Profile for Laboratory Result</a> 추가 수정 사항
+					<ul>
+						<li>신규 요소</li>
+						<ul>
+							<li>Observation.specimen</li>
+						</ul>
+					</ul>
+				</li>
+
+				<li>
+					<a href="./StructureDefinition-krcore-medicationrequest.html">KR Core MedicationRequest Profile</a> 추가 수정 사항
+					<ul>
+						<li>신규 요소</li>
+						<ul>
+							<li>MedicationRequest.medicationCodeableConcept</li>
+							<ul>
+								<li>추가 사유: KR Core IG 외 국내 진료정보교류 관련 표준들과 호환성을 확보하기 위해 추가함</li>
+							</ul>
+							<li>MedicationRequest.medicationCodeableConcept.extension('http://www.hl7korea.or.kr/fhir/krcore/StructureDefinition/krcore-medicationIngredient')</li>
+							<ul>
+								<li>추가 사유: MedicationRequest.medicationCodeableConcept 요소를 사용한 경우, 해당 약품의 약품성분명 정보를 제공하기 위해 추가함</li>
+							</ul>
+						</ul>
+					</ul>
+				</li>
+
+				<li>
+					<a href="./StructureDefinition-krcore-procedure.html">KR Core Procedure Profile</a> 추가 수정 사항
+					<ul>
+						<li>신규 요소</li>
+						<ul>
+							<li>Procedure.category</li>
+							<li>Procedure.partOf</li>
+						</ul>
+					</ul>
+				</li>
+
+				<li>
+					필수 지원 요소(Must Support Element) 정의 변경
+					<ul>
+						<li><a href="element_support_and_responsibilities.html#필수-지원-요소must-support-element">필수 지원 요소(Must Support Element)</a> 참고</li>
+					</ul>
+				</li>
+
+				<li>
+					처리 지침(Obligation) 추가
+					<ul>
+						<li><a href="./StructureDefinition-krcore-patient.html">KR Core Patient Profile</a>에 시범 적용</li>
+						<li><a href="./element_support_and_responsibilities.html#처리-지침obligation">처리 지침(Obligation)</a> 참고</li>
+						<li><a href="./actor_definitions.html">Actor Definitions</a> 참고</li>
+					</ul>
+				</li>
+
+				<li>
+					데이터 부재 사유(Data Absernt Reason) 문서 및 예시 추가
+					<ul>
+						<li><a href="./element_support_and_responsibilities.html#데이터-부재-사유data-absernt-reason">데이터 부재 사유(Data Absernt Reason)</a> 참고</li>
+						<ul>
+							<li>참고 예시</li>
+							<ul>
+								<li><a href="./Patient-krcore-patient-example-03.html">환자 정보 예제 - 개인정보보호</a></li>
+								<li><a href="./Patient-krcore-patient-example-04.html">환자 정보 예제 - 신원미확인</a></li>
+								<li><a href="./Practitioner-krcore-medicaldoctor-example-02.html">진료의 정보 예제 02 - 개인정보보호</a></li>
+							</ul>
+						</ul>
+					</ul>
+				</li>
+
+				<li>
+					<a href="./key_terms.html">Key Terms</a> 문서 추가
+				</li>
+			</ol>
+		</details>
+	</div>
+</div>
+{% endraw %}

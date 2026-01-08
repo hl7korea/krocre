@@ -1,0 +1,28 @@
+{
+  "resourceType": "ActorDefinition",
+  "id": "krcore-actordefinition-server",
+  "url": "http://www.hl7korea.or.kr/fhir/krcore/ActorDefinition/krcore-actordefinition-server",
+  "name": "KRCoreServer",
+  "title": "KR Core Server",
+  "status": "active",
+  "experimental": false,
+  "description": "KR Core Server는 KR Core Client(KR Core 요청자)의 요청에 따라, KR Core Profile을 준수하는 FHIR 리소스를 제공하는 시스템이다.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "KR",
+          "display": "Korea, Republic of"
+        }
+      ]
+    }
+  ],
+  "purpose": "본 리소스 인스턴스는 KR Core Server를 정의하기 위한 목적으로 작성되었음.",
+  "type": "system",
+  "documentation": "KR Core Server는 [KR Core Server CapabilityStatement](CapabilityStatement-krcore-capabilitystatement-server.html)의 요구사항을 **반드시(SHALL)** 준수해야 한다.",
+  "reference": [
+    "http://www.hl7korea.or.kr/fhir/krcore"
+  ],
+  "capabilities": "http://www.hl7korea.or.kr/fhir/krcore/CapabilityStatement/krcore-capabilitystatement-server"
+}

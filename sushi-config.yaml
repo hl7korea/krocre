@@ -1,0 +1,74 @@
+id: hl7.fhir.kr.core
+canonical: http://www.hl7korea.or.kr/fhir/krcore
+name: KR_Core_IG
+title: KR Core Implementation Guide
+status: active
+extension:
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+    valueCode: trial-use
+license: CC0-1.0
+date: '2025-08-29'
+version: 2.0.0
+fhirVersion: 4.0.1
+description: KR Core
+copyrightYear: 2022+
+releaseLabel: 'STU 2'
+publisher:
+  name: HL7 Korea
+  url: http://www.hl7korea.or.kr/
+  email: hl7korea@gmail.com
+contact:
+- name: Korea Health Information Service (Project Sponsor)
+  telecom:
+  - system: url
+    value: https://k-his.or.kr/
+    use: work
+- name: HealthAll Inc. (STU1, STU2 Developer)
+  telecom:
+  - system: phone
+    value: 82-53-384-8590
+    use: work
+  - system: email
+    value: contact@healthall.co.kr
+    use: work
+  - system: url
+    value: https://www.healthall.co.kr/
+    use: work
+jurisdiction: urn:iso:std:iso:3166#KR "Korea, Republic of"
+# jurisdiction: urn:ietf:bcp:47#ko "Korean"
+dependencies:
+  hl7.fhir.uv.smart-app-launch: 2.0.0
+language: ko
+parameters:
+  releaselabel: STU2
+  i18n-default-lang: ko-KR
+  show-inherited-invariants: false
+  no-narrative:
+  - CodeSystem/*
+  - ValueSet/*
+  - ConceptMap/*
+  - NamingSystem/*
+  - SearchParameter/*
+  special-url:
+  - http://www.hl7korea.or.kr/fhir/krcore
+  - http://www.hl7korea.or.kr/Identifier/mohw-md-license-id
+  - http://www.hl7korea.or.kr/CodeSystem/mohw-practitioner-license-types
+  - http://www.hl7korea.or.kr/CodeSystem/mohw-practitioner-qualification-types
+  - http://www.hl7korea.or.kr/CodeSystem/hira-insurance-types
+  - http://www.hl7korea.or.kr/CodeSystem/hira-medical-department
+  - http://www.hl7korea.or.kr/CodeSystem/hira-healthcare-organization-types
+  - http://www.hl7korea.or.kr/CodeSystem/hira-edi-material
+  - http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure
+  - http://www.hl7korea.or.kr/CodeSystem/hira-edi-medication
+  - http://www.hl7korea.or.kr/Identifier/hira-krnpi
+  - http://www.hl7korea.or.kr/CodeSystem/kostat-kcd-8
+  - http://www.hl7korea.or.kr/CodeSystem/kpis-kdcode
+  - http://www.hl7korea.or.kr/CodeSystem/kdca-vcnt-types
+  - http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch
+  - http://www.hl7korea.or.kr/fhir/krcore/CodeSystem/krcore-condition-category-types
+  apply-version: false
+  default-version: true
+  apply-jurisdiction: true
+  apply-contact: false
+  apply-publisher: true
+FSHOnly: false

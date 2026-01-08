@@ -1,0 +1,11 @@
+ValueSet: KR_Core_Procedure_Category_Codes
+Id: krcore-procedure-category-codes
+Title: "KR Core Procedure Category Codes"
+Description: "KR Core Procedure Category 코드집합"
+* ^version = "2.0.0"
+* ^status = #active
+* ^experimental = false
+* ^date = "2025-08-29T13:39:02+09:00"
+* ^publisher = "HL7 Korea"
+* ^jurisdiction = urn:iso:std:iso:3166#KR "Korea, Republic of"
+* include codes from system KR_Core_Procedure_Category_Types

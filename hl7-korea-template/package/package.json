@@ -1,0 +1,21 @@
+﻿{
+  "name": "hl7.kr.fhir.template",
+  "type": "fhir.template",
+  "license": "CC0-1.0",
+  "description": "HL7 Korea FHIR Template",
+  "author": "http://www.hl7korea.or.kr",
+  "canonical": "http://fhir.org/templates/hl7.kr.fhir.template",
+  "base": "fhir.base.template",
+  "dependencies": {
+    "fhir.base.template": "0.8.1"
+  },
+  "version": "0.2.0",
+  "contributors": [
+    "송준현 <jhsong@healthall.co.kr>",
+    "최미현 <mihyeondev@healthall.co.kr>",
+    "전형석 <hsjoen@healthall.co.kr>"
+  ],
+  "bugs": {
+    "email": "contact@healthall.co.kr"
+  }
+}
